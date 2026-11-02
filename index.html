@@ -1,179 +1,106 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Zihao Lu</title>
+    <meta charset="utf-8">
+    <title>Zihao Lu | Computational Photography &amp; Computer Vision</title>
     <meta name="author" content="Zihao Lu">
+    <meta name="description" content="Zihao Lu's research in computational photography, RAW and RGB image restoration, learned image signal processing, and language-guided photo editing.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="imgs/page/logo.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="imgs/page/logo.png" type="image/png">
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
 
   <body>
-    <table
-      style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody>
-        <tr style="padding:0px">
-          <td style="padding:0px">
+    <a class="skip-link" href="#research">Skip to research</a>
+    <main class="page">
+      <header class="profile">
+        <div class="profile-copy">
+          <h1>Zihao Lu</h1>
+          <p class="research-focus">Computational Photography &amp; Computer Vision</p>
+          <p>My research focuses on RAW and RGB image processing, learned image signal processors (ISPs), and language-guided photo editing.</p>
+          <p>At the <a href="https://cvlai.net/">Computer Vision Lab</a>, University of Würzburg, I have worked as a <strong>Student Research Assistant (HiWi)</strong>, advised by <a href="https://scholar.google.com/citations?user=u3MwH5kAAAAJ&amp;hl=en">Prof. Dr. Radu Timofte</a> and collaborating with <a href="https://mv-lab.github.io/">Marcos V. Conde</a>.</p>
+          <p>I am interested in making photography more accessible through AI: improving image quality while giving people intuitive control over the final photograph. My own <a href="https://unsplash.com/@z_lu">photography</a> helps shape the questions I explore.</p>
+          <nav class="profile-links" aria-label="Contact and profiles">
+            <a href="mailto:zihao.lu.henry96@gmail.com">Email</a>
+            <a href="https://scholar.google.com/citations?user=Lx0FZN4AAAAJ&amp;hl=en">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/zihao-lu-3435ab195/">LinkedIn</a>
+            <a href="https://github.com/Z-Lu0">GitHub</a>
+            <a href="https://unsplash.com/@z_lu">Unsplash</a>
+            <a href="mailto:zihao.lu.henry96@gmail.com?subject=CV%20request">Request CV</a>
+          </nav>
+        </div>
+        <img class="profile-photo" src="imgs/page/Lu.jpg" alt="Portrait of Zihao Lu" width="260" height="260">
+      </header>
 
-            <!--		Self Introduction section-->
-            <table
-              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr style="padding:0px">
-                  <td style="padding:2.5%;width:63%;vertical-align:middle">
-                    <p class="name" style="text-align: center;">
-                      Zihao Lu
-                    </p>
-                    <p>I'm a Master's student in Computer Science at University of Würzburg and a research assistant at the Chair of Computer Vision, advised by <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Prof. Dr. Radu Timofte</a>.</p>
+      <nav class="section-links" aria-label="Page sections">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#service">Academic Service</a>
+      </nav>
 
-                    <p>Currently I am working on my Master's thesis focusing on RAW image processing. I hope this work could also improve my daily photography experiences.</p>
+      <section id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <p>My research interests lie in <strong>computational photography and low-level computer vision</strong>. I am interested in using deep learning to improve how images are processed, from RAW sensor measurements to the final photograph, and in connecting image quality with the practical needs of photography.</p>
+        <p>In particular, I am interested in <strong>RAW and RGB image restoration and enhancement</strong>, <strong>learned image signal processing</strong>, and <strong>controllable photo editing</strong>. I aim to develop methods that produce natural-looking, high-quality images across different cameras and capture conditions, while giving people intuitive control over the result through tools such as natural-language instructions.</p>
+      </section>
 
-                    <p style="text-align:center">
-                      <a href="mailto:zihao.lu.henry96@gmail.com">Email</a>
-                      &nbsp;/&nbsp;
-                      <a href="https://scholar.google.com/citations?hl=en&user=Lx0FZN4AAAAJ">
-                        Google Scholar
-                      </a>
-                      &nbsp;/&nbsp;
-                      <a href="#" onclick="alert('Thank you for your interests, CV available soon'); return false;">CV</a>
-                      &nbsp;/&nbsp;
-                      <a href="https://www.linkedin.com/in/zihao-lu-3435ab195/">
-                        LinkedIn
-                      </a>
-                      &nbsp;/&nbsp;
-                      <a href="https://github.com/Z-Lu0">Github</a>
-                      &nbsp;/&nbsp;
-                      <a href="https://unsplash.com/@z_lu">Unsplash</a>
-                    </p>
-                  </td>
-                  <td style="padding:2.5%;width:37%;max-width:37%">
-                    <img
-                        style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;"
-                        alt="profile photo" src="imgs/page/Lu.jpg"
-                        class="hoverZoomLink">
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+      <section id="publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Selected Publications</h2>
+        <article class="publication" aria-labelledby="raw-rgb-title">
+          <a class="publication-image" href="https://arxiv.org/abs/2609.02831" aria-label="Read Benchmarking RAW and RGB Restoration in Image Signal Processors">
+            <img src="imgs/paper/raw-rgb-benchmark.png" alt="Comparison of RAW restoration before the ISP and RGB restoration after the ISP" width="685" height="179" loading="lazy">
+          </a>
+          <div class="publication-copy">
+            <h3 id="raw-rgb-title"><a href="https://arxiv.org/abs/2609.02831">Benchmarking RAW and RGB Restoration in Image Signal Processors</a></h3>
+            <p class="authors"><strong>Zihao Lu</strong>, <a href="https://scholar.google.com/citations?user=u3MwH5kAAAAJ&amp;hl=en">Radu Timofte</a>, <a href="https://mv-lab.github.io/">Marcos V. Conde</a></p>
+            <p class="venue"><strong>BMVC 2026</strong> · Accepted · First author</p>
+            <p class="paper-links"><a href="https://arxiv.org/abs/2609.02831">arXiv</a> / <a href="https://arxiv.org/pdf/2609.02831">PDF</a> / <a href="https://github.com/mv-lab/AISP">Code</a></p>
+            <p class="paper-summary">A benchmark comparing RAW restoration before the ISP with RGB restoration after it, across four smartphone device groups, two learned ISPs, and three degradation settings. The results highlight the importance of matching restoration training to the target imaging pipeline.</p>
+          </div>
+        </article>
 
-            <!--		Research Introduction section-->
-            <table
-              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:16px;width:100%;vertical-align:middle">
-                    <h2>Research</h2>
-                    <p>Right now, I am focusing on neural networks, deep learning, low-level vision tasks, particularly in the context of image processing and computational photography. My research vision is to help photography better and easier for everyone with the help of advanced AI.</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+        <article class="publication" aria-labelledby="pixtalk-title">
+          <a class="publication-image" href="https://openaccess.thecvf.com/content/ICCV2025/html/Conde_PixTalk_Controlling_Photorealistic_Image_Processing_and_Editing_with_Language_ICCV_2025_paper.html" aria-label="Read PixTalk">
+            <img src="imgs/paper/pixtalk.png" alt="The same landscape edited with language instructions to change exposure, contrast, warmth, and seasonal appearance" width="1003" height="319" loading="lazy">
+          </a>
+          <div class="publication-copy">
+            <h3 id="pixtalk-title"><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Conde_PixTalk_Controlling_Photorealistic_Image_Processing_and_Editing_with_Language_ICCV_2025_paper.html">PixTalk: Controlling Photorealistic Image Processing and Editing with Language</a></h3>
+            <p class="authors"><a href="https://mv-lab.github.io/">Marcos V. Conde</a>, <strong>Zihao Lu</strong>, <a href="https://scholar.google.com/citations?user=u3MwH5kAAAAJ&amp;hl=en">Radu Timofte</a></p>
+            <p class="venue"><strong>ICCV 2025</strong></p>
+            <p class="paper-links"><a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Conde_PixTalk_Controlling_Photorealistic_Image_Processing_and_Editing_with_Language_ICCV_2025_paper.pdf">PDF</a> / <a href="https://github.com/mv-lab/pixtalk">Project</a></p>
+            <p class="paper-summary">A vision-language model for controllable, photorealistic photo editing. PixTalk supports over 40 photography transformations and processes 12-megapixel images in under one second on consumer GPUs.</p>
+          </div>
+        </article>
 
-            <!--		Publication section-->
-            <!-- <table
-              style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()"
-                  bgcolor="#FFFFFF">
-                  <td style="padding:16px;width:20%;vertical-align:middle"><div
-                      class="one">
-                      <img src="imgs/2506.02197v2.jpeg" width="160"
-                        alt="PixTalk model illustration"> </div>
-                  </td>
-                  <td style="padding:8px;width:80%;vertical-align:middle">
-                    <a href="https://arxiv.org/pdf/2506.02197">
-                      <span class="papertitle">
-                        PixTalk: Controlling Photorealistic Image Processing and Editing with Language
-                      </span>
-                    </a>
-                    <br>
-                    <a href="https://mv-lab.github.io/">Marcos V. Conde</a>, <strong>Zihao Lu</strong>, <a
-                      href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu
-                      Timofte</a>
-                    <br>
-                    <em>International Conference on Computer Vision (ICCV)</em>, 2025
-                    <br>
-                    <a href="https://arxiv.org/abs/2506.02197">arXiv</a>
-                    <p> PixTalk is 
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table> -->
+        <article class="publication report" aria-labelledby="ntire-2025-title">
+          <a class="publication-image report-image" href="https://arxiv.org/abs/2506.02197" aria-label="Read the NTIRE 2025 RAW challenge report">
+            <img src="imgs/paper/2506.02197v2.jpeg" alt="First page of the NTIRE 2025 RAW Image Restoration and Super-Resolution challenge report" width="1280" height="1280" loading="lazy">
+          </a>
+          <div class="publication-copy">
+            <h3 id="ntire-2025-title"><a href="https://openaccess.thecvf.com/content/CVPR2025W/NTIRE/html/Conde_NTIRE_2025_Challenge_on_RAW_Image_Restoration_and_Super-Resolution_CVPRW_2025_paper.html">NTIRE 2025 Challenge on RAW Image Restoration and Super-Resolution</a></h3>
+            <p class="authors"><a href="https://mv-lab.github.io/">Marcos V. Conde</a>, <a href="https://scholar.google.com/citations?user=u3MwH5kAAAAJ&amp;hl=en">Radu Timofte</a>, <strong>Zihao Lu</strong>, et al.</p>
+            <p class="venue"><strong>CVPR Workshops 2025</strong> · Challenge co-organizer</p>
+            <p class="paper-links"><a href="https://arxiv.org/abs/2506.02197">arXiv</a> / <a href="https://arxiv.org/pdf/2506.02197">PDF</a> / <a href="https://cvlai.net/ntire/2025/">Workshop</a></p>
+            <p class="paper-summary">A report on restoring noisy and blurred RAW images and performing 2× super-resolution on RAW Bayer data. The challenge attracted 230 registered participants, with 45 submitting results.</p>
+          </div>
+        </article>
+      </section>
 
-            <table
-              style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()"
-                  bgcolor="#FFFFFF">
-                  <td style="padding:16px;width:20%;vertical-align:middle"><div
-                      class="one">
-                      <img src="imgs/paper/2506.02197v2.jpeg" width="160"
-                        alt="NTIRE 2025 report cover"> </div>
-                  </td>
-                  <td style="padding:8px;width:80%;vertical-align:middle">
-                    <a href="https://arxiv.org/pdf/2506.02197">
-                      <span class="papertitle">
-                        RAW Image Restoration and Super-Resolution: A NTIRE 2025
-                        Challenge Survey
-                      </span>
-                    </a>
-                    <br>
-                    <a href="https://mv-lab.github.io/">Marcos V. Conde</a>, <a
-                      href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu
-                      Timofte</a>, <strong>Zihao Lu</strong>
-                    <br>
-                    <em>CVPR Workshop</em>, 2025
-                    <br>
-                    <a href="https://arxiv.org/abs/2506.02197">arXiv</a>
-                    &nbsp;/&nbsp; 
-                    <a href="https://arxiv.org/pdf/2506.02197">PDF</a>
-                    <p> This paper reviews the NTIRE 2025 RAW Restoration
-                      Challenge, introducing the proposed solutions and results.
-                      This challenge aims to find an efficient deep neural
-                      network capable of super-resolution or image restoration
-                      on RAW images.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+      <section id="service" aria-labelledby="service-heading">
+        <h2 id="service-heading">Academic Service</h2>
+        <ul class="service-list">
+          <li><a href="https://mv-lab.github.io/pimaging/">Imaging for Physical AI (2nd Edition), ACCV 2026</a> — Workshop co-organizer.</li>
+          <li><a href="https://cvlai.net/ntire/2025/">NTIRE, CVPR 2025</a> — Assisted with workshop organization and co-organized the RAW Image Restoration and Super-Resolution Challenge.</li>
+          <li><a href="https://cvlai.net/ntire/2024/">NTIRE, CVPR 2024</a> — Assisted with workshop organization.</li>
+        </ul>
+      </section>
 
-            <!--		Academic service section-->
-            <table
-              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:16px;width:100%;vertical-align:middle">
-                    <h2>Academic Services</h2>
-                    <p><b>Workshops</b>:
-                      <a href="https://cvlai.net/ntire/2025/">
-                        NTIRE 2025 CVPR
-                      </a>
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!--		foot of the page-->
-            <table
-              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                <tr>
-                  <td style="padding:0px">
-                    <br>
-                    <p style="text-align:center;font-size:small;">
-                      Design and source code from 
-                      <a href="https://jonbarron.info/">Jon Barron's website</a>.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <footer>
+        <p>Last updated: November 2026</p>
+        <p>Design inspired by <a href="https://jonbarron.info/">Jon Barron's website</a>.</p>
+      </footer>
+    </main>
   </body>
 </html>
